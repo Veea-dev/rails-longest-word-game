@@ -1,0 +1,9 @@
+<h1>Welcome to the longest word-game!🚀</h1>
+
+<p class="grid"> <%= @grid %></p>
+
+<form action="score" method = "get">
+<input type="text" name="score" placeholder="Enter your word?" value="<% @word%>">
+  <input type="submit" value="Submit!">
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+</form>
