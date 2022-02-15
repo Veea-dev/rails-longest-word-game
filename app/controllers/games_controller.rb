@@ -9,7 +9,9 @@ class GamesController < ApplicationController
   def score
     @letters = @word.to_a
     @letters.each do |letter|
-    if @letter
+      if @letter
+
+      end
     end
   end
 end
